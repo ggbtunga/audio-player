@@ -40,6 +40,8 @@ function pular(){
         capa.setAttribute("src", musicas[0].img);
         audio.setAttribute("src",musicas[0].src);
         title.innerHTML=musicas[0].artist+ " - " +musicas[0].title;}
+    console.log(count);
+    image.setAttribute("src","./images/controls/reproduzir_icon.png");
     }
 function voltar(){
     if (count>=0){
@@ -52,6 +54,8 @@ function voltar(){
         capa.setAttribute("src", musicas[count].img);
         audio.setAttribute("src",musicas[count].src);
         title.innerHTML=musicas[count].artist+ " - " +musicas[count].title;}
+    console.log(count);
+    image.setAttribute("src","./images/controls/reproduzir_icon.png");
     }
 //pular ou voltar 15s
 function pular15(){
