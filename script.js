@@ -30,6 +30,7 @@ function playPause(){
 
 //pulae ou voltar de música
 function pular(){
+    let image = document.getElementById("playPause");
     if (count<musicas.length){
         count+=1;
         capa.setAttribute("src", musicas[count].img);
@@ -44,6 +45,7 @@ function pular(){
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
     }
 function voltar(){
+    let image = document.getElementById("playPause");
     if (count>=0){
         count-=1;
         capa.setAttribute("src",musicas[count].img);
