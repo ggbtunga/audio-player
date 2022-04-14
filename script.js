@@ -43,6 +43,7 @@ function pular(){
         title.innerHTML=musicas[0].artist+ " - " +musicas[0].title;}
     console.log(count);
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
+    playP=0;
     }
 function voltar(){
     let image = document.getElementById("playPause");
@@ -58,6 +59,7 @@ function voltar(){
         title.innerHTML=musicas[count].artist+ " - " +musicas[count].title;}
     console.log(count);
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
+    playP=0;
     }
 //pular ou voltar 15seg
 function pular15(){
