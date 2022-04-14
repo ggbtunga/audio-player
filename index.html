@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Audio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="audioContainer" class="container">
+
+        <div id="capa">
+            <img id="music" class="music" src="./images/capas/bill_withers.jpg" >        
+        </div>
+
+        <h2 id="title">Bill Withers - Lovely Day</h1>
+
+        <audio id="audio" class="audio" controls src="./musics/Bill Withers - Lovely Day (Official Audio)_1.mp3">
+
+        </audio>
+
+        <div id="controls">
+            <img class="btn" onclick="voltar15()" src="./images/controls/retroceder15_icon.png">
+            <img class="btn" onclick="voltar()" src="./images/controls/next_esquerda.png">
+            <img id="playPause" class="btn" onclick="playPause()" src="./images/controls/reproduzir_icon.png">
+            <img class="btn" onclick="pular()" src="./images/controls/next_direita.png">
+            <img class="btn" onclick="pular15()" src="./images/controls/pular15_icon.png">
+
+        </div>
+    </div>
+    <footer>
+        <p class="footer">Developed by Hick Tan</p>
+        <p class="footer">This page was created only for study porpuse.I don't own the musics rights.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
