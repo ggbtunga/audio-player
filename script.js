@@ -45,6 +45,7 @@ function pular(){
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
     playP=0;
     }
+    
 function voltar(){
     let image = document.getElementById("playPause");
     if (count>=0){
@@ -61,7 +62,8 @@ function voltar(){
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
     playP=0;
     }
-//pular ou voltar 15seg
+    
+//pular ou voltar 15s
 function pular15(){
     audio.currentTime+=15;}
 function voltar15(){
