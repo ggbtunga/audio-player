@@ -41,7 +41,6 @@ function pular(){
         audio.setAttribute("src",musicas[0].src);
         title.innerHTML=musicas[0].artist+ " - " +musicas[0].title;}
     }
-    audio.play();
 function voltar(){
     if (count>=0){
         count-=1;
@@ -54,7 +53,6 @@ function voltar(){
         audio.setAttribute("src",musicas[count].src);
         title.innerHTML=musicas[count].artist+ " - " +musicas[count].title;}
     }
-    audio.play();
 //pular ou voltar 15s
 function pular15(){
     audio.currentTime+=15;}
