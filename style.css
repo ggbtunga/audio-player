@@ -1,0 +1,56 @@
+*{
+    background-color:blueviolet;
+}
+
+#capa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.music{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.audio{
+    display:none;
+    /*margin:auto;*/
+}
+
+.btn{
+    width:30px;
+    /*display:inline-block;
+    margin-left:auto;
+    margin-right:auto;*/
+    padding: 5px;
+}
+
+#controls{
+    /*text-align: center;*/
+    display:flex; /* flex box let the let son itens inside container be more dynamics*/
+    justify-content:center;
+    margin-top:30px;
+}
+
+#title{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin-top:30px;
+    margin-bottom: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.footer{
+    margin-top:2px;
+    margin-top:2px;
+}
