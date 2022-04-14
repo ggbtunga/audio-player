@@ -57,7 +57,7 @@ function voltar(){
     console.log(count);
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
     }
-//pular ou voltar 15s
+//pular ou voltar 15seg
 function pular15(){
     audio.currentTime+=15;}
 function voltar15(){
