@@ -65,10 +65,24 @@ footer{
     width: 300px;
     background-color: black;
     margin-top:25px;
+    border-radius:5px;
 }
 
 .progressed{
     height: 10px;
     width: 0%;
+    background-color: rgb(195, 199, 202);
+    position:relative;
+    border-radius:5px;
+}
+
+.progressed:after{
+    content:'';
+    position:absolute;
+    height: 15px;
+    width:15px;
+    right:-5px;
+    top:-2px;
     background-color: white;
+    border-radius: 10px;
 }
