@@ -8,9 +8,20 @@ var title = document.getElementById("title");
 var musicas=[
     {title:'Lovely Day',artist:'Bill Withers',src:'./musics/Bill Withers - Lovely Day (Official Audio)_1.mp3',img:'./images/capas/bill_withers.jpg'},
     {title:'Chanel',artist:'Frank Ocean',src:'./musics/Frank Ocean - Chanel.mp3',img:'./images/capas/frank_ocean.jpg'},
-    {title:'Estrelar',artist:'Marcos Vale',src:'./musics/Marcos Valle - Estrelar.mp3',img:'./images/capas/marcos_valle.jpg'},
+    {title:'Estrelar',artist:'Marcos Valle',src:'./musics/Marcos Valle - Estrelar.mp3',img:'./images/capas/marcos_valle.jpg'},
     {title:'Stay With Me',artist:'Miki Matsubara',src:'./musics/Miki Matsubara - Saty With Me.mp3',img:'./images/capas/miki_matubara.jpg'}
 ];
+
+//barra de progressão
+var progressed = document.getElementById("progressed");
+var progression_bar = document.getElementById("progression_bar");
+audio.ontimeupdate= function(e){
+    progressed.style.width = (audio.currentTime*100/audio.duration) + '%';
+};
+progression_bar.onclick = function(e){
+    audio.currentTime = (audio.duration*(e.offsetX/progression_bar.offsetWidth));
+};
+
 
 var count = 0;
 //botões play e pause
@@ -44,6 +55,7 @@ function pular(){
     console.log(count);
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
     playP=0;
+    progressed.style.width = "0%";
     }
     
 function voltar(){
@@ -61,6 +73,7 @@ function voltar(){
     console.log(count);
     image.setAttribute("src","./images/controls/reproduzir_icon.png");
     playP=0;
+    progressed.style.width = "0%";
     }
     
 //pular ou voltar 15s
