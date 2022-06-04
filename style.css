@@ -52,5 +52,23 @@ footer{
 
 .footer{
     margin-top:2px;
-    margin-top:2px;
+    margin-bottom:2px;
+}
+
+#bar{
+    display:flex;
+    justify-content: center;
+}
+
+.progression_bar{
+    height: 10px;
+    width: 300px;
+    background-color: black;
+    margin-top:25px;
+}
+
+.progressed{
+    height: 10px;
+    width: 0%;
+    background-color: white;
 }
